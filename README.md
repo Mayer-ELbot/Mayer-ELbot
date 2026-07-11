@@ -1,3 +1,4 @@
+```text
 mayer@maroun ----------------------------------------------------
  . Name: ............. Mayer Mamdouh Salib (Maroun)
  . Alias: ............ EL_bot
