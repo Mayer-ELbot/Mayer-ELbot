@@ -5,35 +5,26 @@
   <a href="https://www.linkedin.com/in/mayer-salib" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-000000?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
-  <a href="https://discordapp.com/users/EL_bot" target="_blank">
-    <img src="https://img.shields.io/badge/Discord-000000?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" />
+  <a href="https://discord.com/app" target="_blank">
+    <img src="https://img.shields.io/badge/Discord-EL__bot-000000?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" />
   </a>
 </div>
 
 <br>
 
 ```ini
-; mayer@maroun:~$ fetch_system_info -------------------------------------------------------------
+; mayer@maroun:~$ fetch_system_info --------------------------------------------------------------------
 
-[ Identity & Vibe ]
-Name        = Mayer Mamdouh Salib (Maroun)
-Alias       = EL_bot
-Education   = CS Student (Semester 3) @ AASTMT
-Audio       = 24/7 Music (IEMs Setup)
-Anti_Vibe   = Apple / Mac Ecosystem
+[ Identity & Vibe ]                       [ Dev Stack & Workflow ]
+Name      = Mayer Mamdouh Salib           Languages = C, C++
+Alias     = EL_bot                        Workflow  = import antigravity;
+Edu       = CS (Sem 3) @ AASTMT           
+Audio     = 24/7 Music (IEMs Setup)       [ Hardware Rig & Gaming ]
+Anti_Vibe = Apple / Mac Ecosystem         Expertise = PC Hardware (Undervolting)
+                                          Persona   = Gamer (Story, Horror, FPS)
 
-[ Dev Stack ]
-Languages   = C, C++
-Workflow    = import antigravity;
-
-[ Hardware Rig & Gaming ] ; ---------------------------------------------------------------------
-Expertise   = PC Hardware Enthusiast (Building, Undervolting, Optimization)
-Persona     = Hardcore Gamer (Story, Horror, FPS)
-
-CPU         = Ryzen 5 8400F
-GPU         = RX 7600 Black Edition
-Memory      = 16GB DDR5 6000MHz CL30
-Cooling     = Thermalright PA140
-Display     = 240Hz Monitor
-Status      = Undervolted & Optimized
-; -----------------------------------------------------------------------------------------------
+[ System Specs ]
+CPU       = Ryzen 5 8400F                 GPU       = RX 7600 Black Edition
+Memory    = 16GB DDR5 6000MHz CL30        Display   = 240Hz Monitor
+Cooling   = Thermalright PA140            Status    = Undervolted & Optimized
+; ------------------------------------------------------------------------------------------------------
