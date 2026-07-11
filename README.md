@@ -1,16 +1,17 @@
-## Hi there 👋
+mayer@maroun ----------------------------------------------------
+ . Name: ............. Mayer Mamdouh Salib (Maroun)
+ . Alias: ............ EL_bot
+ . DOB: .............. 2007-06-12
+ . Education: ........ CS Student (Semester 3) @ AASTMT
+ . Persona: .......... Developer / Hardcore Gamer (Story, Horror, FPS)
 
-<!--
-**Mayer-ELbot/Mayer-ELbot** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+ . Languages: ........ C, C++
+ . Workflow: ......... import antigravity;
 
-Here are some ideas to get you started:
+ . Rig: .............. Ryzen 5 8400F | RX 7600 Black Edition
+ . Memory: ........... 16GB DDR5 6000MHz CL30
+ . Cooling: .......... Thermalright PA140
+ . Display: .......... 240Hz Monitor
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+ - Contact ------------------------------------------------------
+ . Discord: .......... EL_bot
