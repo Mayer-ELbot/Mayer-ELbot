@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 280" width="100%" height="100%">
+  <defs>
+    <!-- Rich Obsidian Dark Canvas -->
+    <linearGradient id="richCanvas" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A0C14"/>
+      <stop offset="50%" stop-color="#10131E"/>
+      <stop offset="100%" stop-color="#080A10"/>
+    </linearGradient>
+
+    <!-- Moving Silver Titanium Border -->
+    <linearGradient id="silverGleam" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="30%" stop-color="#CBD5E1" stop-opacity="0.5"/>
+      <stop offset="70%" stop-color="#475569" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.9"/>
+    </linearGradient>
+
+    <!-- Subtle Dot Grid -->
+    <pattern id="cleanGrid" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.75" fill="#475569" fill-opacity="0.3"/>
+    </pattern>
+
+    <filter id="crispGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .font-sans {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif;
+    }
+    .font-mono {
+      font-family: 'SF Mono', 'Fira Code', 'JetBrains Mono', Consolas, monospace;
+    }
+
+    @keyframes silverOrbit {
+      0% { stroke-dashoffset: 2260; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes beaconGlow {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.9); }
+    }
+    @keyframes eqBar1 { 0%, 100% { height: 5px; y: 13px; } 50% { height: 16px; y: 2px; } }
+    @keyframes eqBar2 { 0%, 100% { height: 15px; y: 3px; } 50% { height: 6px; y: 12px; } }
+    @keyframes eqBar3 { 0%, 100% { height: 8px; y: 10px; } 50% { height: 17px; y: 1px; } }
+    @keyframes eqBar4 { 0%, 100% { height: 17px; y: 1px; } 50% { height: 7px; y: 11px; } }
+    @keyframes eqBar5 { 0%, 100% { height: 10px; y: 8px; } 50% { height: 15px; y: 3px; } }
+
+    .moving-border {
+      stroke-dasharray: 220 910;
+      animation: silverOrbit 8s linear infinite;
+    }
+    .status-dot {
+      animation: beaconGlow 2.5s ease-in-out infinite;
+      transform-origin: 32px 30px;
+    }
+    .b1 { animation: eqBar1 0.75s ease-in-out infinite; }
+    .b2 { animation: eqBar2 0.65s ease-in-out infinite; }
+    .b3 { animation: eqBar3 0.85s ease-in-out infinite; }
+    .b4 { animation: eqBar4 0.7s ease-in-out infinite; }
+    .b5 { animation: eqBar5 0.8s ease-in-out infinite; }
+  </style>
+
+  <!-- Card Surface -->
+  <rect width="850" height="280" rx="16" fill="url(#richCanvas)"/>
+  <rect width="850" height="280" rx="16" fill="url(#cleanGrid)"/>
+  <rect x="1" y="1" width="848" height="278" rx="15" fill="none" stroke="#272E3F" stroke-width="1.2"/>
+  <rect x="1" y="1" width="848" height="278" rx="15" fill="none" stroke="url(#silverGleam)" stroke-width="1.6" class="moving-border" filter="url(#crispGlow)"/>
+
+  <!-- Top Ambient HUD Bar -->
+  <g transform="translate(32, 30)">
+    <!-- Minimal Green Status Dot -->
+    <circle cx="0" cy="0" r="3.5" fill="#22C55E" class="status-dot"/>
+    <text x="14" y="5" fill="#FFFFFF" font-size="12" class="font-mono" font-weight="700" letter-spacing="1">EL_BOT // WORKSTATION</text>
+
+    <!-- IEMs Equalizer (Monochrome Platinum) -->
+    <g transform="translate(330, -9)">
+      <rect x="0" y="2" width="18" height="18" rx="4" fill="#151A29" stroke="#2A3347" stroke-width="1"/>
+      <path d="M 4,12 A 4,4 0 0,1 14,12 M 4,10 L 4,13 M 14,10 L 14,13" stroke="#CBD5E1" stroke-width="1.2" fill="none"/>
+      <!-- Animated Bars -->
+      <g transform="translate(24, 0)">
+        <rect x="0" y="8" width="2.5" height="10" rx="1" fill="#E2E8F0" class="b1"/>
+        <rect x="5" y="4" width="2.5" height="14" rx="1" fill="#FFFFFF" class="b2"/>
+        <rect x="10" y="10" width="2.5" height="8" rx="1" fill="#CBD5E1" class="b3"/>
+        <rect x="15" y="2" width="2.5" height="16" rx="1" fill="#FFFFFF" class="b4"/>
+        <rect x="20" y="6" width="2.5" height="12" rx="1" fill="#E2E8F0" class="b5"/>
+      </g>
+      <text x="56" y="14" fill="#CBD5E1" font-size="11" class="font-mono" font-weight="600">IEMs • 24/7 Audio Feed</text>
+    </g>
+
+    <text x="786" y="5" text-anchor="end" fill="#CBD5E1" font-size="12" class="font-mono" font-weight="600">Aswan, EG • CS @ AASTMT</text>
+  </g>
+
+  <!-- Top Divider Line -->
+  <line x1="32" y1="54" x2="818" y2="54" stroke="#222838" stroke-width="1.2"/>
+
+  <!-- Left Side: Identity (High-Contrast Large Typography) -->
+  <g transform="translate(32, 106)">
+    <text x="0" y="0" fill="#FFFFFF" font-size="34" class="font-sans" font-weight="900" letter-spacing="-0.8">
+      MAYER MAMDOUH
+    </text>
+
+    <text x="0" y="32" fill="#F1F5F9" font-size="15" class="font-sans" font-weight="600">
+      Software Systems &amp; Desktop Architecture
+    </text>
+
+    <text x="0" y="62" fill="#CBD5E1" font-size="13" class="font-mono">
+      Local-first Windows tools • Steam injection • Low latency
+    </text>
+  </g>
+
+  <!-- Right Side: Hardware & Core Specs (Large, Crisp & High-Contrast) -->
+  <g transform="translate(510, 72)">
+    <!-- CPU -->
+    <g transform="translate(0, 0)">
+      <rect width="308" height="34" rx="7" fill="#131724" stroke="#2A3247" stroke-width="1"/>
+      <text x="14" y="22" fill="#94A3B8" font-size="12" class="font-mono" font-weight="700">CPU</text>
+      <text x="294" y="22" text-anchor="end" fill="#FFFFFF" font-size="13" class="font-mono" font-weight="700">Ryzen 5 8400F (Tuned)</text>
+    </g>
+
+    <!-- GPU -->
+    <g transform="translate(0, 40)">
+      <rect width="308" height="34" rx="7" fill="#131724" stroke="#2A3247" stroke-width="1"/>
+      <text x="14" y="22" fill="#94A3B8" font-size="12" class="font-mono" font-weight="700">GPU</text>
+      <text x="294" y="22" text-anchor="end" fill="#FFFFFF" font-size="13" class="font-mono" font-weight="700">RX 7600 Black Edition</text>
+    </g>
+
+    <!-- RAM -->
+    <g transform="translate(0, 80)">
+      <rect width="308" height="34" rx="7" fill="#131724" stroke="#2A3247" stroke-width="1"/>
+      <text x="14" y="22" fill="#94A3B8" font-size="12" class="font-mono" font-weight="700">RAM</text>
+      <text x="294" y="22" text-anchor="end" fill="#FFFFFF" font-size="13" class="font-mono" font-weight="700">16GB DDR5 6000MHz CL30</text>
+    </g>
+
+    <!-- Stack -->
+    <g transform="translate(0, 120)">
+      <rect width="308" height="34" rx="7" fill="#131724" stroke="#3B4663" stroke-width="1"/>
+      <text x="14" y="22" fill="#38BDF8" font-size="12" class="font-mono" font-weight="800">STACK</text>
+      <text x="294" y="22" text-anchor="end" fill="#FFFFFF" font-size="13" class="font-mono" font-weight="700">C++ • C# • Python • Win32</text>
+    </g>
+  </g>
+
+  <!-- Bottom Dedicated Full-Width Ethos Bar (High-Contrast & Large) -->
+  <line x1="32" y1="240" x2="818" y2="240" stroke="#222838" stroke-width="1.2"/>
+  <g transform="translate(32, 260)">
+    <text x="0" y="0" fill="#E2E8F0" font-size="12" class="font-mono" font-style="italic">
+      &gt; "If a process lags, is manual, or takes more than 2 clicks — I build an open-source tool for it."
+    </text>
+    <text x="786" y="0" text-anchor="end" fill="#94A3B8" font-size="11" class="font-mono" font-weight="700" letter-spacing="1">LOCAL-FIRST // NO TELEMETRY</text>
+  </g>
+</svg>
