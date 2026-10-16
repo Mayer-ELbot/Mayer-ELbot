@@ -2,19 +2,19 @@
   <!-- Custom Vector Cyberpunk Terminal Header -->
   <img src="assets/header.svg" width="100%" alt="Mayer Mamdouh Header" />
 
-  <!-- Clean Connect Badges -->
+  <!-- Clean Monochrome Connect Badges -->
   <p align="center">
     <a href="https://steamcommunity.com/id/ELbot28/" target="_blank">
-      <img src="https://img.shields.io/badge/Steam-ELbot28-000000?style=for-the-badge&logo=steam&logoColor=white" alt="Steam" />
+      <img src="https://img.shields.io/badge/Steam-ELbot28-111827?style=for-the-badge&logo=steam&logoColor=white" alt="Steam" />
     </a>
     <a href="https://www.linkedin.com/in/mayer-salib" target="_blank">
-      <img src="https://img.shields.io/badge/LinkedIn-Mayer_Salib-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+      <img src="https://img.shields.io/badge/LinkedIn-Mayer_Salib-111827?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
     </a>
     <a href="https://discord.com" target="_blank">
-      <img src="https://img.shields.io/badge/Discord-EL__bot-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" />
+      <img src="https://img.shields.io/badge/Discord-EL__bot-111827?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" />
     </a>
     <a href="mailto:marounsalib28@gmail.com">
-      <img src="https://img.shields.io/badge/Email-marounsalib28-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+      <img src="https://img.shields.io/badge/Email-marounsalib28-111827?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
     </a>
   </p>
 </div>
@@ -26,8 +26,8 @@
 Name      = Mayer Mamdouh Salib           Languages = C, C++, C#, Python, PowerShell
 Alias     = EL_bot                        Workflow  = Vibecoding + AI-Augmented Dev
 Edu       = CS (Sem 3) @ AASTMT           Tooling   = import antigravity;
-Audio     = 24/7 Music (IEMs Setup)       Focus     = Local-first utilities & automation
-Anti_Vibe = Apple / Mac Ecosystem         
+Audio     = 24/7 Music (IEMs Setup)       Focus     = Windows Internals & Local-First
+Philosophy= Open Source & Minimal Friction
 
 [ Hardware Rig & Gaming ]                 [ System Specs ]
 Expertise = PC Hardware & Undervolting    CPU       = Ryzen 5 8400F
@@ -57,21 +57,13 @@ Cooling   = Thermalright PA140            Status    = Undervolted, Optimized & C
   <tr>
     <td width="50%" valign="top">
       <h3 align="center">🎮 <a href="https://github.com/Mayer-ELbot/GreenLuma-Stealth-Manager">GreenLuma Stealth Manager</a></h3>
-      <p align="center">
-        <img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white" />
-        <img src="https://img.shields.io/badge/Steam-Integration-000000?style=flat-square&logo=steam&logoColor=white" />
-        <img src="https://img.shields.io/badge/License-MIT-00F0FF?style=flat-square" />
-      </p>
+      <p align="center"><code>C#</code> • <code>Win32</code> • <code>Steamworks</code> • <code>MIT</code></p>
       <p>Automated standalone Windows manager for GreenLuma. Eliminates manual INI edits, handles UTF-8 BOM issues, enforces Slot 90 priority, automates cache cleanup, and injects stealth files safely without modifying permanent Steam files.</p>
       <p align="center"><b><a href="https://github.com/Mayer-ELbot/GreenLuma-Stealth-Manager">⚡ View Repository →</a></b></p>
     </td>
     <td width="50%" valign="top">
       <h3 align="center">⚡ <a href="https://github.com/Mayer-ELbot/PC-Booster">PC Booster</a></h3>
-      <p align="center">
-        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
-        <img src="https://img.shields.io/badge/Windows-Optimization-0078D6?style=flat-square&logo=windows&logoColor=white" />
-        <img src="https://img.shields.io/badge/Local--First-Safe-emerald?style=flat-square" />
-      </p>
+      <p align="center"><code>Python</code> • <code>Windows Tweaks</code> • <code>Local-First</code> • <code>MIT</code></p>
       <p>A calm, local-first Windows PC monitoring and reversible optimization toolkit. Live CPU/RAM/GPU monitoring, gentle memory pressure handling without force-closing apps, storage cleanup to Recycle Bin, and 100% reversible OS tweaks.</p>
       <p align="center"><b><a href="https://github.com/Mayer-ELbot/PC-Booster">⚡ View Repository →</a></b></p>
     </td>
@@ -79,21 +71,13 @@ Cooling   = Thermalright PA140            Status    = Undervolted, Optimized & C
   <tr>
     <td width="50%" valign="top">
       <h3 align="center">🛡️ <a href="https://github.com/Mayer-ELbot/NightByte">NightByte AI</a></h3>
-      <p align="center">
-        <img src="https://img.shields.io/badge/Python-PySide6%20%2F%20Qt-green?style=flat-square&logo=qt&logoColor=white" />
-        <img src="https://img.shields.io/badge/Guardian-Network%20Aware-0284c7?style=flat-square" />
-        <img src="https://img.shields.io/badge/License-MIT-00F0FF?style=flat-square" />
-      </p>
+      <p align="center"><code>Python</code> • <code>PySide6 / Qt</code> • <code>Async Engine</code> • <code>MIT</code></p>
       <p>Context-aware auto-shutdown and download guardian for Windows. Monitors Steam, Epic, EA, Battle.net, and Torrent downloads. Features <b>Network Guardian</b> which freezes shutdown countdown if the internet drops overnight so downloads resume safely.</p>
       <p align="center"><b><a href="https://github.com/Mayer-ELbot/NightByte">⚡ View Repository →</a></b></p>
     </td>
     <td width="50%" valign="top">
       <h3 align="center">📚 <a href="https://github.com/Mayer-ELbot/Website-for-AAST-material">AAST Course Hub</a></h3>
-      <p align="center">
-        <img src="https://img.shields.io/badge/Web-Resource%20Hub-orange?style=flat-square" />
-        <img src="https://img.shields.io/badge/Education-AASTMT-blue?style=flat-square" />
-        <img src="https://img.shields.io/badge/Community-Open%20Source-brightgreen?style=flat-square" />
-      </p>
+      <p align="center"><code>Web</code> • <code>CS Curriculum</code> • <code>AASTMT</code> • <code>Open Source</code></p>
       <p>Open-source platform aggregating and organizing academic materials, lecture slides, and essential references for Computer Science students at the Arab Academy for Science & Technology (AASTMT).</p>
       <p align="center"><b><a href="https://github.com/Mayer-ELbot/Website-for-AAST-material">⚡ View Repository →</a></b></p>
     </td>
@@ -114,7 +98,7 @@ Cooling   = Thermalright PA140            Status    = Undervolted, Optimized & C
 
 ---
 
-### 🛠️ Tech Arsenal & Weaponry
+### 🛠️ Tech Stack & Systems
 
 <div align="center">
 
@@ -148,23 +132,38 @@ Cooling   = Thermalright PA140            Status    = Undervolted, Optimized & C
 
 ### 🎮 Transmissions & Memory Logs
 
-> *"I'm afraid."*  
-> — **Arthur Morgan**, *Red Dead Redemption 2*
-
-> *"For those who come after."*  
-> — *Clair Obscur: Expedition 33*
-
-> *"A thing of beauty will never fade away."*  
-> — **Johnny Silverhand**, *Cyberpunk 2077*
-
-> *"Don't you dare go hollow."*  
-> — **Laurentius**, *Dark Souls*
-
-> *"Don't be sorry, be better."*  
-> — **Kratos**, *God of War*
-
-> *"Endure and survive."*  
-> — **Ellie**, *The Last of Us*
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <p><i>"I'm afraid."</i></p>
+      <b>— Arthur Morgan</b>, <i>Red Dead Redemption 2</i>
+    </td>
+    <td width="50%" valign="top">
+      <p><i>"For those who come after."</i></p>
+      <b>— Expedition 33</b>, <i>Clair Obscur</i>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <p><i>"A thing of beauty will never fade away."</i></p>
+      <b>— Johnny Silverhand</b>, <i>Cyberpunk 2077</i>
+    </td>
+    <td width="50%" valign="top">
+      <p><i>"Don't you dare go hollow."</i></p>
+      <b>— Laurentius</b>, <i>Dark Souls</i>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <p><i>"Don't be sorry, be better."</i></p>
+      <b>— Kratos</b>, <i>God of War</i>
+    </td>
+    <td width="50%" valign="top">
+      <p><i>"Endure and survive."</i></p>
+      <b>— Ellie</b>, <i>The Last of Us</i>
+    </td>
+  </tr>
+</table>
 
 ---
 
