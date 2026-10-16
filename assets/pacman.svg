@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 90" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pacBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080C14"/>
+      <stop offset="100%" stop-color="#0E1626"/>
+    </linearGradient>
+
+    <linearGradient id="pacBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FACC15"/>
+      <stop offset="50%" stop-color="#00F0FF"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+
+    <!-- Glowing Pellets -->
+    <filter id="neonGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .font-mono {
+      font-family: 'SF Mono', 'Fira Code', 'JetBrains Mono', Consolas, monospace;
+    }
+    
+    /* Pacman mouth opening and closing */
+    @keyframes chompUpper {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(-35deg); }
+    }
+    @keyframes chompLower {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(35deg); }
+    }
+
+    /* Entire squad traversing the grid horizontally */
+    @keyframes march {
+      0% { transform: translateX(-120px); }
+      100% { transform: translateX(960px); }
+    }
+
+    /* Pellets blinking in rhythm */
+    @keyframes pelletPulse {
+      0%, 100% { opacity: 0.9; transform: scale(1); }
+      50% { opacity: 0.2; transform: scale(0.6); }
+    }
+
+    .pacman-group {
+      animation: march 8s linear infinite;
+    }
+    .jaw-top {
+      animation: chompUpper 0.28s ease-in-out infinite;
+      transform-origin: 30px 45px;
+    }
+    .jaw-bottom {
+      animation: chompLower 0.28s ease-in-out infinite;
+      transform-origin: 30px 45px;
+    }
+    .pellet-1 { animation: pelletPulse 1.2s ease-in-out infinite 0.1s; transform-origin: 200px 45px; }
+    .pellet-2 { animation: pelletPulse 1.2s ease-in-out infinite 0.3s; transform-origin: 290px 45px; }
+    .pellet-3 { animation: pelletPulse 1.2s ease-in-out infinite 0.5s; transform-origin: 380px 45px; }
+    .pellet-4 { animation: pelletPulse 1.2s ease-in-out infinite 0.7s; transform-origin: 470px 45px; }
+    .pellet-5 { animation: pelletPulse 1.2s ease-in-out infinite 0.9s; transform-origin: 560px 45px; }
+    .pellet-6 { animation: pelletPulse 1.2s ease-in-out infinite 1.1s; transform-origin: 650px 45px; }
+    .pellet-7 { animation: pelletPulse 1.2s ease-in-out infinite 0.4s; transform-origin: 740px 45px; }
+  </style>
+
+  <!-- Container Box -->
+  <rect width="850" height="90" rx="12" fill="url(#pacBg)"/>
+  <rect x="1" y="1" width="848" height="88" rx="11" fill="none" stroke="url(#pacBorder)" stroke-width="1.2" stroke-opacity="0.6"/>
+
+  <!-- Top Retro Badge -->
+  <g transform="translate(24, 12)">
+    <text x="0" y="10" fill="#FACC15" font-size="10" class="font-mono" font-weight="700" letter-spacing="1.5">🕹️ 240Hz ARCADE PROTOCOL</text>
+    <text x="210" y="10" fill="#64748B" font-size="10" class="font-mono">// PAC-MAN EATING LATENCY &amp; BUGS</text>
+  </g>
+
+  <!-- Arcade Track Center Line -->
+  <line x1="20" y1="52" x2="830" y2="52" stroke="#1E293B" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <!-- Static Glowing Pellets / Contributions -->
+  <g filter="url(#neonGlow)">
+    <circle cx="200" cy="52" r="4.5" fill="#00F0FF" class="pellet-1"/>
+    <circle cx="290" cy="52" r="4.5" fill="#10B981" class="pellet-2"/>
+    <circle cx="380" cy="52" r="4.5" fill="#FACC15" class="pellet-3"/>
+    <circle cx="470" cy="52" r="4.5" fill="#EC4899" class="pellet-4"/>
+    <circle cx="560" cy="52" r="4.5" fill="#8B5CF6" class="pellet-5"/>
+    <circle cx="650" cy="52" r="4.5" fill="#00F0FF" class="pellet-6"/>
+    <circle cx="740" cy="52" r="4.5" fill="#34D399" class="pellet-7"/>
+  </g>
+
+  <!-- Animated Marching Squad: Pac-Man + Ghosts -->
+  <g class="pacman-group">
+    <!-- PAC-MAN -->
+    <g transform="translate(100, 7)">
+      <!-- Top Jaw -->
+      <path d="M 30,45 L 60,45 A 30,30 0 0,0 30,15 Z" fill="#FACC15" class="jaw-top" filter="url(#neonGlow)"/>
+      <!-- Bottom Jaw -->
+      <path d="M 30,45 L 60,45 A 30,30 0 0,1 30,75 Z" fill="#FACC15" class="jaw-bottom" filter="url(#neonGlow)"/>
+      <!-- Eye -->
+      <circle cx="28" cy="28" r="3.5" fill="#000000"/>
+    </g>
+
+    <!-- GHOST 1 (Blinky - Red) -->
+    <g transform="translate(45, 34)">
+      <path d="M 0,22 Q 0,0 15,0 Q 30,0 30,22 L 25,28 L 20,24 L 15,28 L 10,24 L 5,28 Z" fill="#EF4444"/>
+      <circle cx="9" cy="9" r="3.5" fill="#FFFFFF"/>
+      <circle cx="21" cy="9" r="3.5" fill="#FFFFFF"/>
+      <circle cx="11" cy="9" r="1.8" fill="#1E3A8A"/>
+      <circle cx="23" cy="9" r="1.8" fill="#1E3A8A"/>
+    </g>
+
+    <!-- GHOST 2 (Pinky - Pink) -->
+    <g transform="translate(5, 34)">
+      <path d="M 0,22 Q 0,0 15,0 Q 30,0 30,22 L 25,28 L 20,24 L 15,28 L 10,24 L 5,28 Z" fill="#F472B6"/>
+      <circle cx="9" cy="9" r="3.5" fill="#FFFFFF"/>
+      <circle cx="21" cy="9" r="3.5" fill="#FFFFFF"/>
+      <circle cx="11" cy="9" r="1.8" fill="#1E3A8A"/>
+      <circle cx="23" cy="9" r="1.8" fill="#1E3A8A"/>
+    </g>
+
+    <!-- GHOST 3 (Inky - Cyan Scared Mode) -->
+    <g transform="translate(-35, 34)">
+      <path d="M 0,22 Q 0,0 15,0 Q 30,0 30,22 L 25,28 L 20,24 L 15,28 L 10,24 L 5,28 Z" fill="#00F0FF"/>
+      <circle cx="9" cy="9" r="3.5" fill="#FFFFFF"/>
+      <circle cx="21" cy="9" r="3.5" fill="#FFFFFF"/>
+      <circle cx="11" cy="9" r="1.8" fill="#0284C7"/>
+      <circle cx="23" cy="9" r="1.8" fill="#0284C7"/>
+    </g>
+  </g>
+</svg>

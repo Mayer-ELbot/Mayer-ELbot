@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 240" width="100%" height="100%">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080C14"/>
+      <stop offset="50%" stop-color="#0D1322"/>
+      <stop offset="100%" stop-color="#090D18"/>
+    </linearGradient>
+
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F0FF"/>
+      <stop offset="50%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#EC4899"/>
+    </linearGradient>
+
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="40%" stop-color="#E0F2FE"/>
+      <stop offset="100%" stop-color="#00F0FF"/>
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F0FF"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#1E293B" stroke-width="0.5" stroke-opacity="0.3"/>
+    </pattern>
+
+    <!-- Glowing Filters -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.9); }
+    }
+    @keyframes scanline {
+      0% { transform: translateY(-100%); }
+      100% { transform: translateY(240px); }
+    }
+    .status-dot {
+      animation: pulse 2s ease-in-out infinite;
+      transform-origin: 32px 30px;
+    }
+    .term-text {
+      font-family: 'SF Mono', 'Fira Code', 'JetBrains Mono', Consolas, monospace;
+    }
+  </style>
+
+  <!-- Card Background -->
+  <rect width="850" height="240" rx="16" fill="url(#bgGrad)" />
+  <rect width="850" height="240" rx="16" fill="url(#grid)" />
+
+  <!-- Outer Neon Border -->
+  <rect x="1" y="1" width="848" height="238" rx="15" fill="none" stroke="url(#borderGrad)" stroke-width="1.5" stroke-opacity="0.85" />
+
+  <!-- Window Header Bar -->
+  <rect x="1" y="1" width="848" height="38" rx="15" fill="#0B1120" fill-opacity="0.8" />
+  <line x1="1" y1="39" x2="849" y2="39" stroke="#1E293B" stroke-width="1" />
+
+  <!-- Window Controls -->
+  <circle cx="28" cy="20" r="5" fill="#EF4444" fill-opacity="0.9" />
+  <circle cx="44" cy="20" r="5" fill="#F59E0B" fill-opacity="0.9" />
+  <circle cx="60" cy="20" r="5" fill="#10B981" fill-opacity="0.9" />
+
+  <!-- Terminal Title -->
+  <text x="50%" y="24" text-anchor="middle" fill="#94A3B8" font-size="12" class="term-text" font-weight="500">
+    mayer@rig-8400f: ~/portfolio (main) — 240Hz
+  </text>
+
+  <!-- Live Status Badge (Top Right) -->
+  <g transform="translate(680, 11)">
+    <rect width="145" height="18" rx="9" fill="#022C22" stroke="#059669" stroke-width="0.8" />
+    <circle cx="12" cy="9" r="3.5" fill="#10B981" class="status-dot" filter="url(#glow)" />
+    <text x="24" y="13" fill="#34D399" font-size="9" class="term-text" font-weight="700" letter-spacing="0.5">STATUS: OVERCLOCKED</text>
+  </g>
+
+  <!-- Main Hero Content -->
+  <g transform="translate(36, 68)">
+    <!-- Identity Tag -->
+    <rect x="0" y="0" width="88" height="20" rx="4" fill="#0369A1" fill-opacity="0.3" stroke="#00F0FF" stroke-width="0.8" />
+    <text x="44" y="14" text-anchor="middle" fill="#00F0FF" font-size="11" class="term-text" font-weight="700" letter-spacing="1">EL_bot</text>
+
+    <!-- Sub Tag -->
+    <text x="100" y="14" fill="#94A3B8" font-size="11" class="term-text">
+      // CS @ AASTMT (Sem 3) • Vibecoder &amp; Systems Dev
+    </text>
+
+    <!-- Hero Title -->
+    <text x="0" y="58" fill="url(#titleGrad)" font-size="36" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="900" letter-spacing="-0.5">
+      MAYER MAMDOUH
+    </text>
+
+    <!-- Bio / Manifesto Line -->
+    <text x="0" y="92" fill="#E2E8F0" font-size="14" class="term-text" font-weight="500">
+      Building local-first Windows tools, Steam optimizations, and automation utilities.
+    </text>
+    <text x="0" y="112" fill="#64748B" font-size="12" class="term-text">
+      &gt; "If a process lags, is manual, or takes more than 2 clicks — I build a tool for it."
+    </text>
+
+    <!-- Bottom Tech Capabilities Bar -->
+    <g transform="translate(0, 134)">
+      <rect x="0" y="0" width="124" height="20" rx="4" fill="#111827" stroke="#374151" stroke-width="0.7" />
+      <text x="62" y="14" text-anchor="middle" fill="#38BDF8" font-size="10" class="term-text">🎮 Steam &amp; Gaming</text>
+
+      <rect x="134" y="0" width="138" height="20" rx="4" fill="#111827" stroke="#374151" stroke-width="0.7" />
+      <text x="203" y="14" text-anchor="middle" fill="#A855F7" font-size="10" class="term-text">⚡ Hardware Latency</text>
+
+      <rect x="282" y="0" width="128" height="20" rx="4" fill="#111827" stroke="#374151" stroke-width="0.7" />
+      <text x="346" y="14" text-anchor="middle" fill="#EC4899" font-size="10" class="term-text">🤖 AI &amp; Vibecoding</text>
+
+      <rect x="420" y="0" width="144" height="20" rx="4" fill="#111827" stroke="#374151" stroke-width="0.7" />
+      <text x="492" y="14" text-anchor="middle" fill="#34D399" font-size="10" class="term-text">🛠️ Local-First Apps</text>
+    </g>
+  </g>
+</svg>

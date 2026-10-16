@@ -1,13 +1,8 @@
 <div align="center">
-  <!-- Animated Cyberpunk Waving Header -->
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00F0FF,70:7928CA,100:FF0080&height=220&section=header&text=MAYER%20MAMDOUH&fontSize=46&fontAlignY=36&desc=EL_bot%20%E2%80%A2%20CS%20Student%20%E2%80%A2%20Vibecoder%20%E2%80%A2%20Gamer%20%E2%80%A2%20System%20Tweaker&descAlignY=58&descSize=18&animation=twinkling" width="100%" alt="Header" />
+  <!-- Custom Vector Cyberpunk Terminal Header -->
+  <img src="assets/header.svg" width="100%" alt="Mayer Mamdouh Header" />
 
-  <!-- Animated Typing Subtitle -->
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&duration=2800&pause=1000&color=00F0FF&center=true&vCenter=true&multiline=true&width=620&height=80&lines=CS+Student+%40+AASTMT+%F0%9F%8E%93;Vibecoding+%2B+AI-Augmented+Software+Builder+%E2%9A%A1;PC+Gamer+%7C+Hardware+Undervolter+%26+FPS+Purist+%F0%9F%8E%AE;Building+local-first+tools+to+make+life+frictionless+%F0%9F%9B%A0%EF%B8%8F" alt="Typing SVG" />
-  </a>
-
-  <!-- Social & Gaming Connect Badges -->
+  <!-- Clean Connect Badges -->
   <p align="center">
     <a href="https://steamcommunity.com/id/ELbot28/" target="_blank">
       <img src="https://img.shields.io/badge/Steam-ELbot28-000000?style=for-the-badge&logo=steam&logoColor=white" alt="Steam" />
@@ -23,8 +18,6 @@
     </a>
   </p>
 </div>
-
-<br>
 
 ```ini
 ; mayer@maroun:~$ fetch_system_info --------------------------------------------------------------------
@@ -46,15 +39,37 @@ Cooling   = Thermalright PA140            Status    = Undervolted, Optimized & C
 
 ---
 
-### 💡 Core Mindset
+### 🕹️ The Arcade Zone // 240FPS Chomp
 
-> *"If a process lags, is repetitive, or takes more than two clicks — I build an open-source tool for it."*
+<div align="center">
+  <!-- Animated Pacman Eating Pellets & Latency -->
+  <img src="assets/pacman.svg" width="100%" alt="Pac-Man Arcade Animation" />
+</div>
 
-I am a **Computer Science student** who builds practical, local-first software. As a **vibecoder & AI practitioner**, I leverage modern AI tooling to ship clean, production-ready desktop apps, performance optimizers, and gamer utilities that solve real friction for myself and the community.
+<br>
+
+<div align="center">
+  <!-- Contribution Snake Game Animation -->
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Mayer-ELbot/Mayer-ELbot/output/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Mayer-ELbot/Mayer-ELbot/output/github-contribution-grid-snake.svg">
+    <img alt="GitHub Contribution Snake" src="https://raw.githubusercontent.com/Mayer-ELbot/Mayer-ELbot/output/github-contribution-grid-snake-dark.svg" width="100%" />
+  </picture>
+</div>
 
 ---
 
-### 📦 Featured Open-Source Projects
+### 🛡️ Dev Pulse & Streak Freeze Dashboard
+
+> *Powered by a custom weekly freeze engine: 2 ❄️ Streak Freezes renewed every Monday to protect rest days and keep the streak alive.*
+
+<div align="center">
+  <img src="assets/streak_card.svg" width="100%" alt="Streak & Shield Dashboard" />
+</div>
+
+---
+
+### 📦 Flagship Open-Source Systems
 
 <table>
   <tr>
@@ -105,42 +120,23 @@ I am a **Computer Science student** who builds practical, local-first software. 
 
 ---
 
-### 🐍 Contribution Activity Snake
+### 🔄 Live Activity & Shipped Releases
 
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Mayer-ELbot/Mayer-ELbot/output/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Mayer-ELbot/Mayer-ELbot/output/github-contribution-grid-snake.svg">
-    <img alt="GitHub Contribution Snake" src="https://raw.githubusercontent.com/Mayer-ELbot/Mayer-ELbot/output/github-contribution-grid-snake-dark.svg" width="100%" />
-  </picture>
-</div>
+<!-- AUTO_UPDATE:START -->
+> 🔄 **Live Pulse (Auto-Updated):** `Last sync: 2026-10-16 18:52 UTC`
 
----
-
-### 📈 Activity & Pulse Graph
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Mayer-ELbot&theme=tokyo-night&bg_color=0D1117&color=00F0FF&line=7928CA&point=FFFFFF&area=true&hide_border=true" width="100%" alt="Activity Graph" />
-</div>
-
-<br>
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Mayer-ELbot&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&bg_color=0D1117&title_color=00F0FF&text_color=94A3B8&icon_color=7928CA" height="165" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mayer-ELbot&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F0FF&text_color=94A3B8" height="165" alt="Top Languages" />
-</div>
-
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Mayer-ELbot&theme=tokyonight&hide_border=true&background=0D1117&ring=00F0FF&fire=7928CA&currStreakNum=00F0FF&sideNums=00F0FF&sideLabels=94A3B8&dates=94A3B8" alt="GitHub Streak" />
-</div>
+- 📦 **[GreenLuma-Stealth-Manager](https://github.com/Mayer-ELbot/GreenLuma-Stealth-Manager)**: Shipped **v1.6.0 - Zero-Collision Command Deck & Fluid GPU Animations** *(Oct 16, 2026)*
+- 🚀 **[GreenLuma-Stealth-Manager](https://github.com/Mayer-ELbot/GreenLuma-Stealth-Manager)**: `Pushed commits` *(Oct 14, 2026)*
+- 📦 **[PC-Booster](https://github.com/Mayer-ELbot/PC-Booster)**: Shipped **PC Booster 0.3.0** *(Oct 15, 2026)*
+<!-- AUTO_UPDATE:END -->
 
 ---
 
-### 🛠️ Tech Arsenal & Stack
+### 🛠️ Tech Arsenal & Weaponry
 
 <div align="center">
 
-**Languages & System Tools**<br>
+**Core & Systems**<br>
 <img src="https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white" />
 <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=c%2B%2B&logoColor=white" />
 <img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white" />
@@ -150,7 +146,7 @@ I am a **Computer Science student** who builds practical, local-first software. 
 
 <br>
 
-**AI & Vibecoding Arsenal**<br>
+**AI & Vibecoding Tools**<br>
 <img src="https://img.shields.io/badge/Vibecoding-AI--First-9cf?style=flat-square&logo=openai&logoColor=white" />
 <img src="https://img.shields.io/badge/OpenAI-ChatGPT-412991?style=flat-square&logo=openai&logoColor=white" />
 <img src="https://img.shields.io/badge/Anthropic-Claude-D97706?style=flat-square&logo=anthropic&logoColor=white" />
@@ -166,10 +162,16 @@ I am a **Computer Science student** who builds practical, local-first software. 
 
 </div>
 
-<br>
+---
+
+### 📈 Activity Waveform
 
 <div align="center">
-  <!-- Animated Footer Wave -->
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00F0FF,70:7928CA,100:FF0080&height=120&section=footer" width="100%" alt="Footer" />
-  <p><sub>⚡ Engineered with precision • Vibecoded with AI • Optimized for 240Hz ⚡</sub></p>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Mayer-ELbot&theme=tokyo-night&bg_color=0D1117&color=00F0FF&line=7928CA&point=FFFFFF&area=true&hide_border=true" width="100%" alt="Activity Graph" />
+</div>
+
+---
+
+<div align="center">
+  <p><sub>⚡ Engineered with precision • Vibecoded with AI • Undervolted &amp; Tuned for 240Hz ⚡</sub></p>
 </div>
