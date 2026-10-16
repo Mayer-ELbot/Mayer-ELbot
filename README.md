@@ -1,6 +1,6 @@
 <div align="center">
-  <!-- Animated Workstation HUD (Titanium Dark) -->
-  <img src="assets/hero_v3.svg" width="100%" alt="Mayer Mamdouh // EL_bot" />
+  <!-- Master Workstation HUD (Titanium Dark) -->
+  <img src="assets/hero_v4.svg" width="100%" alt="Mayer Mamdouh // EL_bot" />
 
   <!-- Clean Minimalist Links -->
   <p align="center">
@@ -9,25 +9,10 @@
     <a href="mailto:marounsalib28@gmail.com"><b>📫 Email</b></a> &nbsp;•&nbsp;
     <code>Discord: EL_bot</code>
   </p>
+
+  <!-- Animated Diagnostic Terminal (Matching Theme) -->
+  <img src="assets/system_info.svg" width="100%" alt="System Diagnostic // fetch_system_info" />
 </div>
-
-```ini
-; mayer@aswan:~$ fetch_system_info --------------------------------------------------------------------
-
-[ Identity & Education ]                  [ Dev Stack & Workflow ]
-Name      = Mayer Mamdouh Salib           Languages = C, C++, C#, Python, PowerShell
-Alias     = EL_bot                        Workflow  = Vibecoding + AI-Augmented Builder
-College   = Computing & CS (Sem 3) @ AASTMT Tooling   = Cursor, Antigravity, Win32 APIs
-Location  = Aswan, Egypt                  Focus     = Local-First Desktop Utilities
-Audio     = 24/7 Music (IEMs Setup)       
-
-[ Hardware Rig & Gaming ]                 [ System Specs ]
-Expertise = PC Hardware & Undervolting    CPU       = Ryzen 5 8400F (Tuned)
-Persona   = Gamer (Story, Horror, FPS)    GPU       = RX 7600 Black Edition
-Display   = 240Hz Monitor                 Memory    = 16GB DDR5 6000MHz CL30
-Cooling   = Thermalright PA140            Status    = Undervolted, Clean & Optimized
-; ------------------------------------------------------------------------------------------------------
-```
 
 ---
 
@@ -55,7 +40,7 @@ Cooling   = Thermalright PA140            Status    = Undervolted, Clean & Optim
 ### 🔄 Live Activity & Shipped Releases
 
 <!-- AUTO_UPDATE:START -->
-> 🔄 **Live Pulse (Auto-Updated):** `Last sync: 2026-10-16 19:42 UTC`
+> 🔄 **Live Pulse (Auto-Updated):** `Last sync: 2026-10-16 19:47 UTC`
 
 - 📦 **[PC-Booster](https://github.com/Mayer-ELbot/PC-Booster)**: Shipped **PC Booster Pro v1.0.0 (Official Release)** *(Oct 16, 2026)*
 - 📦 **[GreenLuma-Stealth-Manager](https://github.com/Mayer-ELbot/GreenLuma-Stealth-Manager)**: Shipped **v1.6.0 - Zero-Collision Command Deck & Fluid GPU Animations** *(Oct 16, 2026)*

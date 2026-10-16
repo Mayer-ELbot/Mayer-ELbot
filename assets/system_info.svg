@@ -1,0 +1,200 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 310" width="100%" height="100%">
+  <defs>
+    <!-- Matching Rich Obsidian Canvas -->
+    <linearGradient id="termCanvas" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A0C14"/>
+      <stop offset="50%" stop-color="#10131E"/>
+      <stop offset="100%" stop-color="#080A10"/>
+    </linearGradient>
+
+    <!-- Moving Silver Titanium Border -->
+    <linearGradient id="termGleam" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9"/>
+      <stop offset="30%" stop-color="#CBD5E1" stop-opacity="0.4"/>
+      <stop offset="70%" stop-color="#475569" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.9"/>
+    </linearGradient>
+
+    <!-- Dot Grid Pattern -->
+    <pattern id="termGrid" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.75" fill="#475569" fill-opacity="0.3"/>
+    </pattern>
+
+    <filter id="crispFilter" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .mono {
+      font-family: 'SF Mono', 'Fira Code', 'JetBrains Mono', Consolas, monospace;
+    }
+
+    /* 1. Moving Titanium Border */
+    @keyframes orbitBorder {
+      0% { stroke-dashoffset: 2320; }
+      100% { stroke-dashoffset: 0; }
+    }
+
+    /* 2. Blinking Terminal Prompt Cursor */
+    @keyframes cursorBlink {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+
+    /* 3. Soft Green Beacon Pulse */
+    @keyframes dotPulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.3; transform: scale(0.9); }
+    }
+
+    .border-glow {
+      stroke-dasharray: 240 920;
+      animation: orbitBorder 8s linear infinite;
+    }
+    .terminal-cursor {
+      animation: cursorBlink 1s infinite;
+    }
+    .beacon-dot {
+      animation: dotPulse 2s ease-in-out infinite;
+      transform-origin: 32px 28px;
+    }
+  </style>
+
+  <!-- Base Surfaces -->
+  <rect width="850" height="310" rx="16" fill="url(#termCanvas)"/>
+  <rect width="850" height="310" rx="16" fill="url(#termGrid)"/>
+
+  <!-- Static Structure Border -->
+  <rect x="1" y="1" width="848" height="308" rx="15" fill="none" stroke="#272E3F" stroke-width="1.2"/>
+
+  <!-- Flowing Titanium Border -->
+  <rect x="1" y="1" width="848" height="308" rx="15" fill="none" stroke="url(#termGleam)" stroke-width="1.6" class="border-glow" filter="url(#crispFilter)"/>
+
+  <!-- Top Terminal Header Bar -->
+  <g transform="translate(32, 28)">
+    <!-- Terminal Window Controls -->
+    <circle cx="0" cy="0" r="4.5" fill="#EF4444" fill-opacity="0.8"/>
+    <circle cx="14" cy="0" r="4.5" fill="#F59E0B" fill-opacity="0.8"/>
+    <circle cx="28" cy="0" r="4.5" fill="#10B981" fill-opacity="0.8"/>
+
+    <!-- Prompt Command with Blinking Cursor -->
+    <text x="50" y="4" fill="#94A3B8" font-size="12" class="mono" font-weight="500">mayer@aswan:~$</text>
+    <text x="175" y="4" fill="#FFFFFF" font-size="12" class="mono" font-weight="700">fetch_system_info --detailed</text>
+    <rect x="390" y="-8" width="7" height="15" fill="#22C55E" class="terminal-cursor"/>
+
+    <text x="786" y="4" text-anchor="end" fill="#94A3B8" font-size="11" class="mono" font-weight="600">SYSTEM DIAGNOSTIC // 240Hz SYNC</text>
+  </g>
+
+  <!-- Divider Line -->
+  <line x1="32" y1="48" x2="818" y2="48" stroke="#222838" stroke-width="1.2"/>
+
+  <!-- ==================== LEFT COLUMN: IDENTITY & EDUCATION ==================== -->
+  <g transform="translate(36, 78)">
+    <!-- Section Title -->
+    <text x="0" y="0" fill="#38BDF8" font-size="12" class="mono" font-weight="800" letter-spacing="1">[ IDENTITY &amp; EDUCATION ]</text>
+
+    <!-- Row 1: Name -->
+    <g transform="translate(0, 26)">
+      <text x="0" y="0" fill="#94A3B8" font-size="12" class="mono">Name</text>
+      <text x="90" y="0" fill="#64748B" font-size="12" class="mono">::</text>
+      <text x="115" y="0" fill="#FFFFFF" font-size="13" class="mono" font-weight="700">Mayer Mamdouh Salib</text>
+    </g>
+
+    <!-- Row 2: Alias -->
+    <g transform="translate(0, 54)">
+      <text x="0" y="0" fill="#94A3B8" font-size="12" class="mono">Alias</text>
+      <text x="90" y="0" fill="#64748B" font-size="12" class="mono">::</text>
+      <text x="115" y="0" fill="#38BDF8" font-size="13" class="mono" font-weight="700">EL_bot</text>
+    </g>
+
+    <!-- Row 3: College -->
+    <g transform="translate(0, 82)">
+      <text x="0" y="0" fill="#94A3B8" font-size="12" class="mono">College</text>
+      <text x="90" y="0" fill="#64748B" font-size="12" class="mono">::</text>
+      <text x="115" y="0" fill="#FFFFFF" font-size="13" class="mono" font-weight="700">Computing &amp; CS @ AASTMT</text>
+    </g>
+
+    <!-- Row 4: Semester -->
+    <g transform="translate(0, 110)">
+      <text x="0" y="0" fill="#94A3B8" font-size="12" class="mono">Status</text>
+      <text x="90" y="0" fill="#64748B" font-size="12" class="mono">::</text>
+      <text x="115" y="0" fill="#F4F4F5" font-size="13" class="mono" font-weight="600">Semester 3 (Software Eng)</text>
+    </g>
+
+    <!-- Row 5: Location -->
+    <g transform="translate(0, 138)">
+      <text x="0" y="0" fill="#94A3B8" font-size="12" class="mono">Location</text>
+      <text x="90" y="0" fill="#64748B" font-size="12" class="mono">::</text>
+      <text x="115" y="0" fill="#FFFFFF" font-size="13" class="mono" font-weight="700">Aswan, Egypt</text>
+    </g>
+
+    <!-- Row 6: Audio -->
+    <g transform="translate(0, 166)">
+      <text x="0" y="0" fill="#94A3B8" font-size="12" class="mono">Audio</text>
+      <text x="90" y="0" fill="#64748B" font-size="12" class="mono">::</text>
+      <text x="115" y="0" fill="#F4F4F5" font-size="13" class="mono" font-weight="600">24/7 Music (IEMs Setup)</text>
+    </g>
+  </g>
+
+  <!-- Vertical Subtle Column Divider -->
+  <line x1="430" y1="62" x2="430" y2="280" stroke="#1E2433" stroke-width="1"/>
+
+  <!-- ==================== RIGHT COLUMN: RIG SPECS & WORKFLOW ==================== -->
+  <g transform="translate(456, 78)">
+    <!-- Section Title -->
+    <text x="0" y="0" fill="#A78BFA" font-size="12" class="mono" font-weight="800" letter-spacing="1">[ SYSTEM SPECS &amp; WORKFLOW ]</text>
+
+    <!-- Row 1: CPU -->
+    <g transform="translate(0, 26)">
+      <text x="0" y="0" fill="#94A3B8" font-size="12" class="mono">CPU</text>
+      <text x="90" y="0" fill="#64748B" font-size="12" class="mono">::</text>
+      <text x="115" y="0" fill="#FFFFFF" font-size="13" class="mono" font-weight="700">Ryzen 5 8400F (Tuned)</text>
+    </g>
+
+    <!-- Row 2: GPU -->
+    <g transform="translate(0, 54)">
+      <text x="0" y="0" fill="#94A3B8" font-size="12" class="mono">GPU</text>
+      <text x="90" y="0" fill="#64748B" font-size="12" class="mono">::</text>
+      <text x="115" y="0" fill="#FFFFFF" font-size="13" class="mono" font-weight="700">RX 7600 Black Edition</text>
+    </g>
+
+    <!-- Row 3: Memory -->
+    <g transform="translate(0, 82)">
+      <text x="0" y="0" fill="#94A3B8" font-size="12" class="mono">Memory</text>
+      <text x="90" y="0" fill="#64748B" font-size="12" class="mono">::</text>
+      <text x="115" y="0" fill="#FFFFFF" font-size="13" class="mono" font-weight="700">16GB DDR5 6000MHz CL30</text>
+    </g>
+
+    <!-- Row 4: Display -->
+    <g transform="translate(0, 110)">
+      <text x="0" y="0" fill="#94A3B8" font-size="12" class="mono">Display</text>
+      <text x="90" y="0" fill="#64748B" font-size="12" class="mono">::</text>
+      <text x="115" y="0" fill="#F4F4F5" font-size="13" class="mono" font-weight="600">240Hz Gaming Monitor</text>
+    </g>
+
+    <!-- Row 5: Workflow -->
+    <g transform="translate(0, 138)">
+      <text x="0" y="0" fill="#94A3B8" font-size="12" class="mono">Workflow</text>
+      <text x="90" y="0" fill="#64748B" font-size="12" class="mono">::</text>
+      <text x="115" y="0" fill="#38BDF8" font-size="13" class="mono" font-weight="700">Vibecoding + AI-Augmented</text>
+    </g>
+
+    <!-- Row 6: Tuning -->
+    <g transform="translate(0, 166)">
+      <text x="0" y="0" fill="#94A3B8" font-size="12" class="mono">Status</text>
+      <text x="90" y="0" fill="#64748B" font-size="12" class="mono">::</text>
+      <text x="115" y="0" fill="#22C55E" font-size="13" class="mono" font-weight="700">Undervolted &amp; Optimized</text>
+    </g>
+  </g>
+
+  <!-- Bottom Line -->
+  <line x1="32" y1="288" x2="818" y2="288" stroke="#1E2433" stroke-width="1"/>
+  <text x="50%" y="300" text-anchor="middle" fill="#64748B" font-size="10" class="mono">
+    LOCAL-FIRST ARCHITECTURE  •  ZERO RESIDUALS  •  OPEN SOURCE
+  </text>
+</svg>
