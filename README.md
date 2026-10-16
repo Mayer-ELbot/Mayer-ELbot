@@ -57,13 +57,7 @@ Cooling   = Thermalright PA140            Status    = Undervolted, Optimized & C
   </picture>
 </div>
 
----
 
-### 🛡️ Dev Pulse & Streak Freeze Dashboard
-
-<div align="center">
-  <img src="assets/streak_card.svg" width="100%" alt="Streak & Shield Dashboard" />
-</div>
 
 ---
 
@@ -164,17 +158,23 @@ Cooling   = Thermalright PA140            Status    = Undervolted, Optimized & C
 
 ### 🎮 Transmissions & Memory Logs
 
-> *"Be loyal to what matters."*  
+> *"I'm afraid."*  
 > — **Arthur Morgan**, *Red Dead Redemption 2*
 
-> *"We're more ghosts than people."*  
-> — **Arthur Morgan**, *Red Dead Redemption 2*
+> *"For those who come after."*  
+> — *Clair Obscur: Expedition 33*
 
 > *"A thing of beauty will never fade away."*  
 > — **Johnny Silverhand**, *Cyberpunk 2077*
 
 > *"Don't you dare go hollow."*  
-> — **Laurentius of the Great Swamp**, *Dark Souls*
+> — **Laurentius**, *Dark Souls*
+
+> *"Don't be sorry, be better."*  
+> — **Kratos**, *God of War*
+
+> *"Endure and survive."*  
+> — **Ellie**, *The Last of Us*
 
 ---
 
