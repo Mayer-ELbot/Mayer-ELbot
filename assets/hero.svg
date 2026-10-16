@@ -1,42 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 270" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 250" width="100%" height="100%">
   <defs>
-    <!-- Background Gradient -->
-    <linearGradient id="bgDark" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#05070C"/>
-      <stop offset="50%" stop-color="#0B0F19"/>
-      <stop offset="100%" stop-color="#06090E"/>
+    <!-- Premium Obsidian Background -->
+    <linearGradient id="obsidianBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090A0F"/>
+      <stop offset="50%" stop-color="#0E1017"/>
+      <stop offset="100%" stop-color="#07080C"/>
     </linearGradient>
 
-    <!-- Animated Ambient Aura -->
-    <radialGradient id="auraGlow" cx="70%" cy="30%" r="65%">
-      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.18"/>
-      <stop offset="50%" stop-color="#6366F1" stop-opacity="0.08"/>
+    <!-- Liquid Titanium Moving Border (Monochrome Luxury) -->
+    <linearGradient id="titaniumLaser" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9"/>
+      <stop offset="30%" stop-color="#94A3B8" stop-opacity="0.4"/>
+      <stop offset="70%" stop-color="#334155" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.8"/>
+    </linearGradient>
+
+    <!-- Ambient Subtle White Halo (Not Neon) -->
+    <radialGradient id="ambientHalo" cx="30%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.04"/>
       <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
     </radialGradient>
 
-    <!-- Flowing Laser Border Gradient -->
-    <linearGradient id="laserGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00F0FF"/>
-      <stop offset="35%" stop-color="#3B82F6"/>
-      <stop offset="70%" stop-color="#8B5CF6"/>
-      <stop offset="100%" stop-color="#EC4899"/>
-    </linearGradient>
-
-    <!-- Text Shimmer Gradient -->
-    <linearGradient id="textShimmer" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#FFFFFF"/>
-      <stop offset="50%" stop-color="#E0F2FE"/>
-      <stop offset="100%" stop-color="#38BDF8"/>
-    </linearGradient>
-
-    <!-- Micro Dot Grid -->
-    <pattern id="dotGrid" width="22" height="22" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="0.9" fill="#334155" fill-opacity="0.3"/>
+    <!-- Micro Tech Grid -->
+    <pattern id="fineGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.65" fill="#52525B" fill-opacity="0.25"/>
     </pattern>
 
-    <!-- High-Impact Neon Blur Filter -->
-    <filter id="neonFilter" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
@@ -45,170 +36,143 @@
   </defs>
 
   <style>
-    .font-title {
+    .font-sans {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif;
     }
-    .font-code {
+    .font-mono {
       font-family: 'SF Mono', 'Fira Code', 'JetBrains Mono', Consolas, monospace;
     }
 
-    /* 1. Laser Border Flowing Around Card */
-    @keyframes laserOrbit {
-      0% { stroke-dashoffset: 2240; }
+    /* 1. Subtle White Liquid Border Orbit */
+    @keyframes titaniumOrbit {
+      0% { stroke-dashoffset: 2200; }
       100% { stroke-dashoffset: 0; }
     }
 
-    /* 2. Pulsing Beacon */
-    @keyframes beaconPulse {
-      0%, 100% { transform: scale(1); opacity: 1; }
-      50% { transform: scale(1.4); opacity: 0.3; }
+    /* 2. Soft Status Pulse */
+    @keyframes softPulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.35; transform: scale(0.9); }
     }
 
-    /* 3. Audio Equalizer Waveform Bars Dancing */
-    @keyframes eqBar1 { 0%, 100% { height: 6px; y: 16px; } 50% { height: 20px; y: 2px; } }
-    @keyframes eqBar2 { 0%, 100% { height: 18px; y: 4px; } 50% { height: 8px; y: 14px; } }
-    @keyframes eqBar3 { 0%, 100% { height: 10px; y: 12px; } 50% { height: 22px; y: 0px; } }
-    @keyframes eqBar4 { 0%, 100% { height: 22px; y: 0px; } 50% { height: 12px; y: 10px; } }
-    @keyframes eqBar5 { 0%, 100% { height: 14px; y: 8px; } 50% { height: 20px; y: 2px; } }
-    @keyframes eqBar6 { 0%, 100% { height: 8px; y: 14px; } 50% { height: 18px; y: 4px; } }
+    /* 3. Hi-Fi IEMs Equalizer Dancing (Silver/Monochrome) */
+    @keyframes bar1 { 0%, 100% { height: 4px; y: 14px; } 50% { height: 16px; y: 2px; } }
+    @keyframes bar2 { 0%, 100% { height: 14px; y: 4px; } 50% { height: 6px; y: 12px; } }
+    @keyframes bar3 { 0%, 100% { height: 8px; y: 10px; } 50% { height: 18px; y: 0px; } }
+    @keyframes bar4 { 0%, 100% { height: 18px; y: 0px; } 50% { height: 8px; y: 10px; } }
+    @keyframes bar5 { 0%, 100% { height: 12px; y: 6px; } 50% { height: 16px; y: 2px; } }
 
-    /* 4. Scanner Radar Line */
-    @keyframes scanLine {
-      0% { transform: translateX(0px); opacity: 0; }
-      10% { opacity: 0.8; }
-      90% { opacity: 0.8; }
-      100% { transform: translateX(850px); opacity: 0; }
+    .titanium-border {
+      stroke-dasharray: 220 880;
+      animation: titaniumOrbit 8s linear infinite;
     }
-
-    .laser-border {
-      stroke-dasharray: 280 840;
-      animation: laserOrbit 7s linear infinite;
-    }
-    .beacon {
-      animation: beaconPulse 2s ease-in-out infinite;
+    .status-dot {
+      animation: softPulse 2.5s ease-in-out infinite;
       transform-origin: 32px 28px;
     }
-    .scanner {
-      animation: scanLine 6s cubic-bezier(0.4, 0, 0.2, 1) infinite 1s;
-    }
-    .eq-1 { animation: eqBar1 0.75s ease-in-out infinite; }
-    .eq-2 { animation: eqBar2 0.65s ease-in-out infinite; }
-    .eq-3 { animation: eqBar3 0.85s ease-in-out infinite; }
-    .eq-4 { animation: eqBar4 0.7s ease-in-out infinite; }
-    .eq-5 { animation: eqBar5 0.9s ease-in-out infinite; }
-    .eq-6 { animation: eqBar6 0.8s ease-in-out infinite; }
+    .b1 { animation: bar1 0.7s ease-in-out infinite; }
+    .b2 { animation: bar2 0.6s ease-in-out infinite; }
+    .b3 { animation: bar3 0.8s ease-in-out infinite; }
+    .b4 { animation: bar4 0.65s ease-in-out infinite; }
+    .b5 { animation: bar5 0.75s ease-in-out infinite; }
   </style>
 
-  <!-- Base Surfaces -->
-  <rect width="850" height="270" rx="16" fill="url(#bgDark)"/>
-  <rect width="850" height="270" rx="16" fill="url(#auraGlow)"/>
-  <rect width="850" height="270" rx="16" fill="url(#dotGrid)"/>
+  <!-- Base Canvas -->
+  <rect width="850" height="250" rx="14" fill="url(#obsidianBg)"/>
+  <rect width="850" height="250" rx="14" fill="url(#ambientHalo)"/>
+  <rect width="850" height="250" rx="14" fill="url(#fineGrid)"/>
 
-  <!-- Static Slate Border Base -->
-  <rect x="1" y="1" width="848" height="268" rx="15" fill="none" stroke="#1E293B" stroke-width="1.2" stroke-opacity="0.8"/>
+  <!-- Static Structure Border -->
+  <rect x="1" y="1" width="848" height="248" rx="13" fill="none" stroke="#27272A" stroke-width="1"/>
 
-  <!-- Active Neon Laser Flow Border -->
-  <rect x="1" y="1" width="848" height="268" rx="15" fill="none" stroke="url(#laserGrad)" stroke-width="2" class="laser-border" filter="url(#neonFilter)"/>
+  <!-- Flowing Titanium Border -->
+  <rect x="1" y="1" width="848" height="248" rx="13" fill="none" stroke="url(#titaniumLaser)" stroke-width="1.5" class="titanium-border" filter="url(#softGlow)"/>
 
-  <!-- Scanning Cyber Light Beam -->
-  <g class="scanner">
-    <line x1="0" y1="2" x2="0" y2="268" stroke="#00F0FF" stroke-width="1.5" stroke-opacity="0.6"/>
-  </g>
-
-  <!-- Top Ambient Navigation & Audio HUD -->
+  <!-- Top Ambient HUD Bar -->
   <g transform="translate(32, 28)">
-    <!-- Radar Live Status Beacon -->
-    <circle cx="0" cy="0" r="4" fill="#00F0FF" class="beacon" filter="url(#neonFilter)"/>
-    <circle cx="0" cy="0" r="2.5" fill="#FFFFFF"/>
-    <text x="14" y="4" fill="#00F0FF" font-size="11" class="font-code" font-weight="700" letter-spacing="1.5">EL_BOT // COMMAND DECK</text>
+    <!-- Status Beacon (Minimal Green) -->
+    <circle cx="0" cy="0" r="3" fill="#22C55E" class="status-dot"/>
+    <text x="12" y="4" fill="#E4E4E7" font-size="11" class="font-mono" font-weight="600" letter-spacing="1">EL_BOT // WORKSTATION</text>
 
-    <!-- Audio IEMs Music Visualizer (Center) -->
-    <g transform="translate(320, -10)">
-      <rect x="0" y="3" width="18" height="18" rx="4" fill="#0F172A" stroke="#1E293B" stroke-width="0.8"/>
-      <!-- Small Headphone Icon -->
-      <path d="M 5,14 A 4,4 0 0,1 13,14 M 5,12 L 5,15 M 13,12 L 13,15" stroke="#38BDF8" stroke-width="1.2" fill="none"/>
-      <!-- Equalizer Bars -->
-      <g transform="translate(24, 0)">
-        <rect x="0" y="8" width="2.5" height="12" rx="1" fill="#00F0FF" class="eq-1"/>
-        <rect x="5" y="4" width="2.5" height="16" rx="1" fill="#38BDF8" class="eq-2"/>
-        <rect x="10" y="10" width="2.5" height="10" rx="1" fill="#818CF8" class="eq-3"/>
-        <rect x="15" y="2" width="2.5" height="18" rx="1" fill="#A855F7" class="eq-4"/>
-        <rect x="20" y="6" width="2.5" height="14" rx="1" fill="#EC4899" class="eq-5"/>
-        <rect x="25" y="12" width="2.5" height="8" rx="1" fill="#00F0FF" class="eq-6"/>
+    <!-- IEMs Audio Equalizer (Monochrome Hi-Fi) -->
+    <g transform="translate(340, -9)">
+      <rect x="0" y="2" width="16" height="16" rx="4" fill="#18181B" stroke="#27272A" stroke-width="0.8"/>
+      <!-- Audio wave icon -->
+      <path d="M 4,11 A 3,3 0 0,1 12,11 M 4,10 L 4,12 M 12,10 L 12,12" stroke="#A1A1AA" stroke-width="1" fill="none"/>
+      <!-- Animated Equalizer Bars -->
+      <g transform="translate(22, 0)">
+        <rect x="0" y="8" width="2" height="10" rx="1" fill="#D4D4D8" class="b1"/>
+        <rect x="4" y="4" width="2" height="14" rx="1" fill="#FFFFFF" class="b2"/>
+        <rect x="8" y="10" width="2" height="8" rx="1" fill="#A1A1AA" class="b3"/>
+        <rect x="12" y="2" width="2" height="16" rx="1" fill="#FFFFFF" class="b4"/>
+        <rect x="16" y="6" width="2" height="12" rx="1" fill="#D4D4D8" class="b5"/>
       </g>
-      <text x="58" y="14" fill="#64748B" font-size="10" class="font-code">IEMs • 24/7 Audio Feed</text>
+      <text x="48" y="13" fill="#71717A" font-size="10" class="font-mono">IEMs • 24/7 Audio</text>
     </g>
 
-    <text x="786" y="4" text-anchor="end" fill="#64748B" font-size="11" class="font-code">Alexandria, EG • AASTMT CS</text>
+    <!-- Location & University -->
+    <text x="786" y="4" text-anchor="end" fill="#71717A" font-size="11" class="font-mono">Alexandria, EG • CS @ AASTMT</text>
   </g>
 
-  <!-- Subtle Top Line Divider -->
-  <line x1="32" y1="52" x2="818" y2="52" stroke="#1E293B" stroke-width="1"/>
+  <!-- Divider Line -->
+  <line x1="32" y1="48" x2="818" y2="48" stroke="#1E2028" stroke-width="1"/>
 
-  <!-- Left Side: Hero Name & Identity -->
-  <g transform="translate(32, 94)">
-    <!-- Name Badge with Gradient -->
-    <text x="0" y="0" fill="url(#textShimmer)" font-size="36" class="font-title" font-weight="900" letter-spacing="-1">
+  <!-- Left Side: Identity (No Overlaps, Width Restricted to 460px) -->
+  <g transform="translate(32, 90)">
+    <text x="0" y="0" fill="#FFFFFF" font-size="30" class="font-sans" font-weight="800" letter-spacing="-0.5">
       MAYER MAMDOUH
     </text>
 
-    <!-- Subtitle -->
-    <text x="0" y="32" fill="#94A3B8" font-size="13" class="font-code" font-weight="600">
-      ⚡ Software Engineer &amp; Systems Builder • Gamer
+    <text x="0" y="26" fill="#A1A1AA" font-size="12" class="font-mono" font-weight="500">
+      Software Engineer &amp; Systems Builder
     </text>
 
-    <!-- What I Build -->
-    <text x="0" y="60" fill="#E2E8F0" font-size="12" class="font-code">
-      Crafting local-first Windows tools, Steam injectors &amp; latency optimizations.
+    <text x="0" y="52" fill="#71717A" font-size="11" class="font-mono">
+      Building local-first tools &amp; Windows utilities.
     </text>
 
-    <!-- Philosophy -->
-    <text x="0" y="84" fill="#64748B" font-size="11" class="font-code" font-style="italic">
-      &gt; "If it takes more than 2 clicks, lags, or invades privacy — I write a tool to replace it."
+    <text x="0" y="74" fill="#52525B" font-size="11" class="font-mono" font-style="italic">
+      &gt; "If it takes more than 2 clicks — I build a tool for it."
     </text>
   </g>
 
-  <!-- Right Side: Rig Specs & Stack Bento Pills -->
-  <g transform="translate(560, 74)">
-    <!-- Pill 1: CPU -->
+  <!-- Right Side: Hardware & Core Specs (Starts at x=520, Clean & Spacious) -->
+  <g transform="translate(520, 68)">
+    <!-- CPU -->
     <g transform="translate(0, 0)">
-      <rect width="258" height="30" rx="8" fill="#0B1322" stroke="#1E293B" stroke-width="1"/>
-      <circle cx="14" cy="15" r="3" fill="#10B981"/>
-      <text x="24" y="19" fill="#64748B" font-size="10" class="font-code">CPU</text>
-      <text x="246" y="19" text-anchor="end" fill="#E2E8F0" font-size="10" class="font-code" font-weight="600">Ryzen 5 8400F (Undervolted)</text>
+      <rect width="298" height="28" rx="6" fill="#11131A" stroke="#222530" stroke-width="0.8"/>
+      <text x="12" y="18" fill="#71717A" font-size="10" class="font-mono">CPU</text>
+      <text x="286" y="18" text-anchor="end" fill="#E4E4E7" font-size="10" class="font-mono" font-weight="600">Ryzen 5 8400F (Tuned)</text>
     </g>
 
-    <!-- Pill 2: GPU -->
-    <g transform="translate(0, 36)">
-      <rect width="258" height="30" rx="8" fill="#0B1322" stroke="#1E293B" stroke-width="1"/>
-      <circle cx="14" cy="15" r="3" fill="#8B5CF6"/>
-      <text x="24" y="19" fill="#64748B" font-size="10" class="font-code">GPU</text>
-      <text x="246" y="19" text-anchor="end" fill="#E2E8F0" font-size="10" class="font-code" font-weight="600">RX 7600 Black Edition</text>
+    <!-- GPU -->
+    <g transform="translate(0, 34)">
+      <rect width="298" height="28" rx="6" fill="#11131A" stroke="#222530" stroke-width="0.8"/>
+      <text x="12" y="18" fill="#71717A" font-size="10" class="font-mono">GPU</text>
+      <text x="286" y="18" text-anchor="end" fill="#E4E4E7" font-size="10" class="font-mono" font-weight="600">RX 7600 Black Edition</text>
     </g>
 
-    <!-- Pill 3: Memory -->
-    <g transform="translate(0, 72)">
-      <rect width="258" height="30" rx="8" fill="#0B1322" stroke="#1E293B" stroke-width="1"/>
-      <circle cx="14" cy="15" r="3" fill="#00F0FF"/>
-      <text x="24" y="19" fill="#64748B" font-size="10" class="font-code">RAM</text>
-      <text x="246" y="19" text-anchor="end" fill="#E2E8F0" font-size="10" class="font-code" font-weight="600">16GB DDR5 6000MHz CL30</text>
+    <!-- Memory -->
+    <g transform="translate(0, 68)">
+      <rect width="298" height="28" rx="6" fill="#11131A" stroke="#222530" stroke-width="0.8"/>
+      <text x="12" y="18" fill="#71717A" font-size="10" class="font-mono">RAM</text>
+      <text x="286" y="18" text-anchor="end" fill="#E4E4E7" font-size="10" class="font-mono" font-weight="600">16GB DDR5 6000MHz CL30</text>
     </g>
 
-    <!-- Pill 4: Stack Focus -->
-    <g transform="translate(0, 108)">
-      <rect width="258" height="30" rx="8" fill="#032540" stroke="#0284C7" stroke-width="0.9" stroke-opacity="0.6"/>
-      <circle cx="14" cy="15" r="3" fill="#38BDF8"/>
-      <text x="24" y="19" fill="#38BDF8" font-size="10" class="font-code" font-weight="700">CORE</text>
-      <text x="246" y="19" text-anchor="end" fill="#38BDF8" font-size="10" class="font-code" font-weight="700">C++ • C# • Python • Win32</text>
+    <!-- Stack -->
+    <g transform="translate(0, 102)">
+      <rect width="298" height="28" rx="6" fill="#11131A" stroke="#27272A" stroke-width="0.8"/>
+      <text x="12" y="18" fill="#A1A1AA" font-size="10" class="font-mono" font-weight="700">CORE</text>
+      <text x="286" y="18" text-anchor="end" fill="#F4F4F5" font-size="10" class="font-mono" font-weight="600">C++ • C# • Python • Win32</text>
     </g>
   </g>
 
-  <!-- Bottom Interactive Status Bar -->
-  <line x1="32" y1="234" x2="818" y2="234" stroke="#1E293B" stroke-width="1"/>
-  <g transform="translate(32, 252)">
-    <text x="0" y="0" fill="#38BDF8" font-size="10" class="font-code" font-weight="700">● 100% LOCAL-FIRST</text>
-    <text x="180" y="0" fill="#64748B" font-size="10" class="font-code">• ZERO TELEMETRY</text>
-    <text x="350" y="0" fill="#64748B" font-size="10" class="font-code">• REVERSIBLE SYSTEM TWEAKS</text>
-    <text x="786" y="0" text-anchor="end" fill="#10B981" font-size="10" class="font-code" font-weight="700">KERNEL &amp; RUNTIME READY</text>
+  <!-- Bottom Minimal Status Bar -->
+  <line x1="32" y1="216" x2="818" y2="216" stroke="#1E2028" stroke-width="1"/>
+  <g transform="translate(32, 234)">
+    <text x="0" y="0" fill="#71717A" font-size="10" class="font-mono">
+      <tspan fill="#A1A1AA" font-weight="600">● LOCAL-FIRST</tspan>  •  ZERO TELEMETRY  •  REVERSIBLE TWEAKS
+    </text>
+    <text x="786" y="0" text-anchor="end" fill="#71717A" font-size="10" class="font-mono">OPEN SOURCE CODEBASES</text>
   </g>
 </svg>
