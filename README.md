@@ -61,8 +61,6 @@ Cooling   = Thermalright PA140            Status    = Undervolted, Optimized & C
 
 ### 🛡️ Dev Pulse & Streak Freeze Dashboard
 
-> *Powered by a custom weekly freeze engine: 2 ❄️ Streak Freezes renewed every Monday to protect rest days and keep the streak alive.*
-
 <div align="center">
   <img src="assets/streak_card.svg" width="100%" alt="Streak & Shield Dashboard" />
 </div>
@@ -161,6 +159,22 @@ Cooling   = Thermalright PA140            Status    = Undervolted, Optimized & C
 <img src="https://img.shields.io/badge/Git-Version%20Control-F05032?style=flat-square&logo=git&logoColor=white" />
 
 </div>
+
+---
+
+### 🎮 Transmissions & Memory Logs
+
+> *"Be loyal to what matters."*  
+> — **Arthur Morgan**, *Red Dead Redemption 2*
+
+> *"We're more ghosts than people."*  
+> — **Arthur Morgan**, *Red Dead Redemption 2*
+
+> *"A thing of beauty will never fade away."*  
+> — **Johnny Silverhand**, *Cyberpunk 2077*
+
+> *"Don't you dare go hollow."*  
+> — **Laurentius of the Great Swamp**, *Dark Souls*
 
 ---
 
