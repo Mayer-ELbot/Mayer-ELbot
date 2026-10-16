@@ -1,6 +1,6 @@
 <div align="center">
-  <!-- Animated Cyberpunk Workstation HUD -->
-  <img src="assets/hero.svg" width="100%" alt="Mayer Mamdouh // EL_bot" />
+  <!-- Animated Workstation HUD (Titanium Dark) -->
+  <img src="assets/hero_v2.svg" width="100%" alt="Mayer Mamdouh // EL_bot" />
 
   <!-- Clean Minimalist Links -->
   <p align="center">
@@ -16,14 +16,14 @@
 ### ⚡ Featured Systems Architecture
 
 <div align="center">
-  <!-- Animated Bento 2.0 Systems Showcase -->
-  <img src="assets/systems_bento.svg" width="100%" alt="Featured Systems Architecture" />
+  <!-- Animated Bento Systems Showcase (Titanium Dark) -->
+  <img src="assets/systems_v2.svg" width="100%" alt="Featured Systems Architecture" />
 </div>
 
 <p align="center">
-  <a href="https://github.com/Mayer-ELbot/GreenLuma-Stealth-Manager"><b>[ 🎮 Explore GreenLuma Manager ]</b></a> &nbsp;&nbsp;•&nbsp;&nbsp;
-  <a href="https://github.com/Mayer-ELbot/PC-Booster"><b>[ ⚡ Explore PC Booster ]</b></a> &nbsp;&nbsp;•&nbsp;&nbsp;
-  <a href="https://github.com/Mayer-ELbot/NightByte"><b>[ 🛡️ Explore NightByte AI ]</b></a>
+  <a href="https://github.com/Mayer-ELbot/GreenLuma-Stealth-Manager"><b>GreenLuma Stealth Manager ↗</b></a> &nbsp;&nbsp;•&nbsp;&nbsp;
+  <a href="https://github.com/Mayer-ELbot/PC-Booster"><b>PC Booster ↗</b></a> &nbsp;&nbsp;•&nbsp;&nbsp;
+  <a href="https://github.com/Mayer-ELbot/NightByte"><b>NightByte AI ↗</b></a>
 </p>
 
 ---
@@ -43,7 +43,7 @@
 ### 🔄 Live Activity & Shipped Releases
 
 <!-- AUTO_UPDATE:START -->
-> 🔄 **Live Pulse (Auto-Updated):** `Last sync: 2026-10-16 19:28 UTC`
+> 🔄 **Live Pulse (Auto-Updated):** `Last sync: 2026-10-16 19:38 UTC`
 
 - 📦 **[PC-Booster](https://github.com/Mayer-ELbot/PC-Booster)**: Shipped **PC Booster Pro v1.0.0 (Official Release)** *(Oct 16, 2026)*
 - 📦 **[GreenLuma-Stealth-Manager](https://github.com/Mayer-ELbot/GreenLuma-Stealth-Manager)**: Shipped **v1.6.0 - Zero-Collision Command Deck & Fluid GPU Animations** *(Oct 16, 2026)*
@@ -66,5 +66,5 @@ Platforms     ::  Windows 10/11 (Kernel & Tweaks), Linux Environments
 
 <div align="center">
   <p><i>"Be loyal to what matters."</i> — <b>Arthur Morgan</b></p>
-  <sub>Mayer Mamdouh (EL_bot) • Systems &amp; Desktop Software • Alexandria, Egypt</sub>
+  <sub>Mayer Mamdouh (EL_bot) • Systems &amp; Desktop Software • Aswan, Egypt</sub>
 </div>
