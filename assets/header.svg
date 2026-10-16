@@ -75,14 +75,14 @@
 
   <!-- Terminal Title -->
   <text x="50%" y="24" text-anchor="middle" fill="#94A3B8" font-size="12" class="term-text" font-weight="500">
-    mayer@rig-8400f: ~/portfolio (main) — 240Hz
+    mayer@rig-8400f: ~/portfolio (main)
   </text>
 
   <!-- Live Status Badge (Top Right) -->
-  <g transform="translate(680, 11)">
-    <rect width="145" height="18" rx="9" fill="#022C22" stroke="#059669" stroke-width="0.8" />
+  <g transform="translate(710, 11)">
+    <rect width="115" height="18" rx="9" fill="#022C22" stroke="#059669" stroke-width="0.8" />
     <circle cx="12" cy="9" r="3.5" fill="#10B981" class="status-dot" filter="url(#glow)" />
-    <text x="24" y="13" fill="#34D399" font-size="9" class="term-text" font-weight="700" letter-spacing="0.5">STATUS: OVERCLOCKED</text>
+    <text x="24" y="13" fill="#34D399" font-size="9" class="term-text" font-weight="700" letter-spacing="0.5">STATUS: ACTIVE</text>
   </g>
 
   <!-- Main Hero Content -->

@@ -39,25 +39,15 @@ Cooling   = Thermalright PA140            Status    = Undervolted, Optimized & C
 
 ---
 
-### 🕹️ The Arcade Zone // 240FPS Chomp
+### 🐍 Contribution Activity
 
 <div align="center">
-  <!-- Animated Pacman Eating Pellets & Latency -->
-  <img src="assets/pacman.svg" width="100%" alt="Pac-Man Arcade Animation" />
-</div>
-
-<br>
-
-<div align="center">
-  <!-- Contribution Snake Game Animation -->
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Mayer-ELbot/Mayer-ELbot/output/github-contribution-grid-snake-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Mayer-ELbot/Mayer-ELbot/output/github-contribution-grid-snake.svg">
     <img alt="GitHub Contribution Snake" src="https://raw.githubusercontent.com/Mayer-ELbot/Mayer-ELbot/output/github-contribution-grid-snake-dark.svg" width="100%" />
   </picture>
 </div>
-
-
 
 ---
 
@@ -178,14 +168,6 @@ Cooling   = Thermalright PA140            Status    = Undervolted, Optimized & C
 
 ---
 
-### 📈 Activity Waveform
-
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Mayer-ELbot&theme=tokyo-night&bg_color=0D1117&color=00F0FF&line=7928CA&point=FFFFFF&area=true&hide_border=true" width="100%" alt="Activity Graph" />
-</div>
-
----
-
-<div align="center">
-  <p><sub>⚡ Engineered with precision • Vibecoded with AI • Undervolted &amp; Tuned for 240Hz ⚡</sub></p>
+  <p><sub>⚡ Mayer Mamdouh (EL_bot) • Alexandria, Egypt</sub></p>
 </div>
